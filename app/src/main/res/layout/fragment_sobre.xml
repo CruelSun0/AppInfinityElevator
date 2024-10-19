@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SobreFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutUnicoSobre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textSobreTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_margin="20dp"
+                android:text="Sobre Nós: Uma Jornada pela Educação e Tecnologia"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textClassific"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_margin="20dp"
+                android:text="Desenvolvedores e Designers"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <TextView
+                android:id="@+id/textClassific2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_margin="20dp"
+                android:text="Jailson Silva: Trainee? e idealizador do projeto, responsável pela construção e programação do aplicativo, com o objetivo de facilitar o acesso à educação de forma offline.
+\n\nMateus: Designer talentoso que deu vida visual ao aplicativo, criando uma interface intuitiva e agradável ao usuário.
+\n\nFernando Lago: Designer que contribuiu com a criação de elementos visuais e na organização da identidade visual do projeto.
+"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/textClassific3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:text="Uma Equipe Dedicada"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/textClassific4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_margin="20dp"
+                android:text="Por trás deste projeto inovador, contamos com uma equipe de colaboradores apaixonados por tecnologia e educação:\n\nCleice\nRyan de Sousa\nThaynara\nSamylla\nThiago\nMickael\nLuis Carlos\nWagner João\nEmilly\nMichele\nGabriela\nIvanilde\n\nAgradecemos a todos pela dedicação e por todas as contribuições que tornaram este projeto possível."
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/textClassific5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:text="Tecnologias Sociais e Protagonismo Estudantil"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/textClassific6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_margin="20dp"
+                android:text="Este aplicativo, desenvolvido para a Feira de Tecnológica da EETEPA-Itaituba em 2024, tem como objetivo principal democratizar o acesso à educação, oferecendo ferramentas e recursos que podem ser utilizados mesmo sem conexão à internet. Acreditamos que a tecnologia pode ser um grande aliado na construção de um futuro mais justo e igualitário para todos."
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/textClassific7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:text="Nosso Compromisso"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/textClassific8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_margin="20dp"
+                android:text="Nosso compromisso é utilizar a tecnologia para transformar a realidade e promover a inclusão social. Com este projeto, buscamos contribuir para a construção de uma sociedade mais justa e equitativa, onde todos tenham acesso à educação de qualidade."
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/textClassific9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:text="Agradecimentos"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:id="@+id/textClassific10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_margin="20dp"
+                android:text="Agradecemos à EETEPA-Itaituba (Escola de Ensino Técnico do Estado do Pará) pela oportunidade de participar desta importante iniciativa e por todo o apoio durante a realização deste projeto. \n\nAgradecemos também a todos os nossos colaboradores, parceiros e apoiadores, que acreditaram em nosso trabalho e nos ajudaram a transformar essa ideia em realidade."
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

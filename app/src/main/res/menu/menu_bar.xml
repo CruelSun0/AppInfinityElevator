@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicio"
+        android:enabled="true"
+        android:icon="@drawable/inicio"
+        android:title="Início" />
+
+    <item
+        android:id="@+id/estudar"
+        android:enabled="true"
+        android:icon="@drawable/book"
+        android:title="Estudar" />
+
+    <item
+        android:id="@+id/exercicios"
+        android:enabled="true"
+        android:icon="@drawable/exercicios"
+        android:title="Exercícios"
+
+        />
+
+    <item
+        android:id="@+id/sobre"
+        android:enabled="true"
+        android:icon="@drawable/sobre"
+        android:title="Sobre"
+
+        />
+
+</menu>

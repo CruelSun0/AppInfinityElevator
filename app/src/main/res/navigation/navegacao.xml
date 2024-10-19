@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacao"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/portuguesFragment"
+        android:name="com.education.infintyelevator.view.PortuguesFragment"
+        android:label="fragment_portugues"
+        tools:layout="@layout/fragment_portugues" />
+    <fragment
+        android:id="@+id/matematicaFragment"
+        android:name="com.education.infintyelevator.view.MatematicaFragment"
+        android:label="fragment_matematica"
+        tools:layout="@layout/fragment_matematica" />
+    <fragment
+        android:id="@+id/biologiaFragment"
+        android:name="com.education.infintyelevator.view.BiologiaFragment"
+        android:label="fragment_biologia"
+        tools:layout="@layout/fragment_biologia" />
+
+    <fragment
+        android:id="@+id/quimicaFragment"
+        android:name="com.education.infintyelevator.view.QuimicaFragment"
+        android:label="fragment_quimica"
+        tools:layout="@layout/fragment_quimica" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.education.infintyelevator.view.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/ParaPortuguesFragment"
+            app:destination="@id/portuguesFragment" />
+        <action
+            android:id="@+id/ParaMatematicaFragment"
+            app:destination="@id/matematicaFragment" />
+        <action
+            android:id="@+id/ParaQuimicaFragment"
+            app:destination="@id/quimicaFragment" />
+        <action
+            android:id="@+id/ParaBiologiaFragment"
+            app:destination="@id/biologiaFragment" />
+        <action
+            android:id="@+id/ParaTIFragment"
+            app:destination="@id/TIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TIFragment"
+        android:name="com.education.infintyelevator.view.TIFragment"
+        android:label="fragment_ti"
+        tools:layout="@layout/fragment_ti" />
+</navigation>
