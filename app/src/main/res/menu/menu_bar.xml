@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/inicio"
+        android:id="@+id/inicioFragment"
         android:enabled="true"
         android:icon="@drawable/inicio"
         android:title="Início" />
 
     <item
-        android:id="@+id/estudar"
+        android:id="@+id/estudarFragment"
         android:enabled="true"
         android:icon="@drawable/book"
         android:title="Estudar" />
 
     <item
-        android:id="@+id/exercicios"
+        android:id="@+id/exerciciosFragment"
         android:enabled="true"
         android:icon="@drawable/exercicios"
         android:title="Exercícios"
@@ -22,7 +22,7 @@
         />
 
     <item
-        android:id="@+id/sobre"
+        android:id="@+id/sobreFragment"
         android:enabled="true"
         android:icon="@drawable/sobre"
         android:title="Sobre"

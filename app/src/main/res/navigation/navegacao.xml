@@ -46,10 +46,33 @@
         <action
             android:id="@+id/ParaTIFragment"
             app:destination="@id/TIFragment" />
+        <action
+            android:id="@+id/ParaInglesFragment"
+            app:destination="@id/inglesFragment" />
     </fragment>
     <fragment
         android:id="@+id/TIFragment"
         android:name="com.education.infintyelevator.view.TIFragment"
         android:label="fragment_ti"
         tools:layout="@layout/fragment_ti" />
+    <fragment
+        android:id="@+id/estudarFragment"
+        android:name="com.education.infintyelevator.view.EstudarFragment"
+        android:label="fragment_estudar"
+        tools:layout="@layout/fragment_estudar" />
+    <fragment
+        android:id="@+id/exerciciosFragment"
+        android:name="com.education.infintyelevator.view.ExerciciosFragment"
+        android:label="fragment_exercicios"
+        tools:layout="@layout/fragment_exercicios" />
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="com.education.infintyelevator.view.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/inglesFragment"
+        android:name="com.education.infintyelevator.view.InglesFragment"
+        android:label="fragment_ingles"
+        tools:layout="@layout/fragment_ingles" />
 </navigation>
