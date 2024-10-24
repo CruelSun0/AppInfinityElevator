@@ -1,6 +1,5 @@
 package com.education.infintyelevator.view;
 
-import com.education.infintyelevator.QuizActivity;
 import com.education.infintyelevator.databinding.FragmentInicioBinding;
 
 import android.content.Intent;

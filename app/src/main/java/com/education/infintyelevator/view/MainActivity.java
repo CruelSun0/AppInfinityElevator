@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     NavController navController;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

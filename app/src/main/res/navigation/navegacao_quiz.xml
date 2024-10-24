@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacao_quiz"
+    app:startDestination="@id/quizFragment">
+    <fragment
+        android:id="@+id/quizBiologia"
+        android:name="com.education.infintyelevator.view.QuizBiologia"
+        android:label="fragment_quiz_biologia"
+        tools:layout="@layout/fragment_quiz_biologia" />
+    <fragment
+        android:id="@+id/quizInformatica"
+        android:name="com.education.infintyelevator.view.QuizInformatica"
+        android:label="fragment_quiz_informatica"
+        tools:layout="@layout/fragment_quiz_informatica" />
+    <fragment
+        android:id="@+id/quizMatematica"
+        android:name="com.education.infintyelevator.view.QuizMatematica"
+        android:label="fragment_quiz_matematica"
+        tools:layout="@layout/fragment_quiz_matematica" />
+    <fragment
+        android:id="@+id/quizIngles"
+        android:name="com.education.infintyelevator.view.QuizIngles"
+        android:label="fragment_quiz_ingles"
+        tools:layout="@layout/fragment_quiz_ingles" />
+    <fragment
+        android:id="@+id/quizQuimica"
+        android:name="com.education.infintyelevator.view.QuizQuimica"
+        android:label="fragment_quiz_quimica"
+        tools:layout="@layout/fragment_quiz_quimica" />
+    <fragment
+        android:id="@+id/quizPortugues"
+        android:name="com.education.infintyelevator.view.QuizPortugues"
+        android:label="fragment_quiz_portugues"
+        tools:layout="@layout/fragment_quiz_portugues" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.education.infintyelevator.view.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/ParaQuizBiologia"
+            app:destination="@id/quizBiologia" />
+        <action
+            android:id="@+id/ParaQuizInformatica"
+            app:destination="@id/quizInformatica" />
+        <action
+            android:id="@+id/ParaQuizIngles"
+            app:destination="@id/quizIngles" />
+        <action
+            android:id="@+id/ParaQuizMatematica"
+            app:destination="@id/quizMatematica" />
+        <action
+            android:id="@+id/ParaQuizPortugues"
+            app:destination="@id/quizPortugues" />
+        <action
+            android:id="@+id/ParaQuizQuimica"
+            app:destination="@id/quizQuimica" />
+    </fragment>
+    <fragment
+        android:id="@+id/acertouQuiz"
+        android:name="com.education.infintyelevator.view.AcertouQuiz"
+        android:label="fragment_acertou_quiz"
+        tools:layout="@layout/fragment_acertou_quiz" />
+    <fragment
+        android:id="@+id/errouQuiz"
+        android:name="com.education.infintyelevator.view.ErrouQuiz"
+        android:label="fragment_errou_quiz"
+        tools:layout="@layout/fragment_errou_quiz" />
+    <action
+        android:id="@+id/globalErrouQuiz"
+        app:destination="@id/errouQuiz" />
+    <action
+        android:id="@+id/globalAcertouQuiz"
+        app:destination="@id/acertouQuiz" />
+</navigation>
