@@ -33,22 +33,47 @@
         tools:layout="@layout/fragment_inicio" >
         <action
             android:id="@+id/ParaPortuguesFragment"
-            app:destination="@id/portuguesFragment" />
+            app:destination="@id/portuguesFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
         <action
             android:id="@+id/ParaMatematicaFragment"
-            app:destination="@id/matematicaFragment" />
+            app:destination="@id/matematicaFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
         <action
             android:id="@+id/ParaQuimicaFragment"
-            app:destination="@id/quimicaFragment" />
+            app:destination="@id/quimicaFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
         <action
             android:id="@+id/ParaBiologiaFragment"
-            app:destination="@id/biologiaFragment" />
+            app:destination="@id/biologiaFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
         <action
             android:id="@+id/ParaTIFragment"
-            app:destination="@id/TIFragment" />
+            app:destination="@id/TIFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
         <action
             android:id="@+id/ParaInglesFragment"
-            app:destination="@id/inglesFragment" />
+            app:destination="@id/inglesFragment"
+            app:enterAnim="@anim/aumentar"
+            app:exitAnim="@anim/diminuir"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
     </fragment>
     <fragment
         android:id="@+id/TIFragment"
@@ -64,7 +89,26 @@
         android:id="@+id/exerciciosFragment"
         android:name="com.education.infintyelevator.view.ExerciciosFragment"
         android:label="fragment_exercicios"
-        tools:layout="@layout/fragment_exercicios" />
+        tools:layout="@layout/fragment_exercicios" >
+        <action
+            android:id="@+id/paraQuimicaExercicios"
+            app:destination="@id/quimicaExerciciosFragment" />
+        <action
+            android:id="@+id/paraInformaticaExercicios"
+            app:destination="@id/InformaticaExercicios" />
+        <action
+            android:id="@+id/paraPortuguesExercicios"
+            app:destination="@id/portuguesExerciciosFragment" />
+        <action
+            android:id="@+id/paraMatematicaExercicios"
+            app:destination="@id/matematicaExerciciosFragment" />
+        <action
+            android:id="@+id/paraInglesExercicios"
+            app:destination="@id/inglesExerciciosFragment" />
+        <action
+            android:id="@+id/paraBiologiaExercicios"
+            app:destination="@id/biologiaExerciciosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sobreFragment"
         android:name="com.education.infintyelevator.view.SobreFragment"
@@ -74,5 +118,65 @@
         android:id="@+id/inglesFragment"
         android:name="com.education.infintyelevator.view.InglesFragment"
         android:label="fragment_ingles"
-        tools:layout="@layout/fragment_ingles" />
+        tools:layout="@layout/fragment_ingles"/>
+    <action
+        android:id="@+id/paraInicioFragment"
+        app:destination="@id/inicioFragment"
+        app:enterAnim="@anim/mover_para_cima"
+        app:exitAnim="@anim/sair_para_baixo"
+        app:popEnterAnim="@anim/sair_para_baixo"
+        app:popExitAnim="@anim/mover_para_cima" />
+    <action
+        android:id="@+id/paraEstudarFragment"
+        app:destination="@id/estudarFragment"
+        app:enterAnim="@anim/mover_para_cima"
+        app:exitAnim="@anim/sair_para_baixo"
+        app:popEnterAnim="@anim/sair_para_baixo"
+        app:popExitAnim="@anim/mover_para_cima"/>
+    <action
+        android:id="@+id/paraExerciciosFragment"
+        app:destination="@id/exerciciosFragment"
+        app:enterAnim="@anim/mover_para_cima"
+        app:exitAnim="@anim/sair_para_baixo"
+        app:popEnterAnim="@anim/mover_para_cima"
+        app:popExitAnim="@anim/sair_para_baixo"/>
+    <action
+        android:id="@+id/paraSobreFragment"
+        app:destination="@id/sobreFragment"
+        app:enterAnim="@anim/mover_para_cima"
+        app:exitAnim="@anim/sair_para_baixo"
+        app:popEnterAnim="@anim/mover_para_cima"
+        app:popExitAnim="@anim/sair_para_baixo"/>
+    <fragment
+        android:id="@+id/biologiaExerciciosFragment"
+        android:name="com.education.infintyelevator.view.BiologiaExerciciosFragment"
+        android:label="fragment_biologia_exercicios"
+        tools:layout="@layout/fragment_biologia_exercicios" />
+    <fragment
+        android:id="@+id/InformaticaExercicios"
+        android:name="com.education.infintyelevator.view.InformaticaExerciciosFragment"
+        android:label="fragment_informatica_exercicios"
+        tools:layout="@layout/fragment_informatica_exercicios" />
+    <fragment
+        android:id="@+id/inglesExerciciosFragment"
+        android:name="com.education.infintyelevator.view.InglesExerciciosFragment"
+        android:label="fragment_ingles_exercicios"
+        tools:layout="@layout/fragment_ingles_exercicios" />
+    <fragment
+        android:id="@+id/matematicaExerciciosFragment"
+        android:name="com.education.infintyelevator.view.MatematicaExerciciosFragment"
+        android:label="fragment_matematica_exercicios"
+        tools:layout="@layout/fragment_matematica_exercicios" />
+    <fragment
+        android:id="@+id/quimicaExerciciosFragment"
+        android:name="com.education.infintyelevator.view.QuimicaExerciciosFragment"
+        android:label="fragment_quimica_exercicios"
+        tools:layout="@layout/fragment_quimica_exercicios" />
+    <fragment
+        android:id="@+id/portuguesExerciciosFragment"
+        android:name="com.education.infintyelevator.view.PortuguesExerciciosFragment"
+        android:label="fragment_portugues_exercicios"
+        tools:layout="@layout/fragment_portugues_exercicios" />
+
+
 </navigation>

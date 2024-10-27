@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MeuTema" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+
+
+    </style>
+
+    <style name="MeuTema.Dark" parent="MeuTema">
+
+
+
+    </style>
+
+</resources>

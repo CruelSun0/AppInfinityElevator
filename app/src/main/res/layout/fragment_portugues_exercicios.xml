@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PortuguesExerciciosFragment">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.333333333333333333333333333333333333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.666666666666666666666666666666666666" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLinerExH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLinerExH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLinerExH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLinerExH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80" />
+
+
+        <TextView
+            android:id="@+id/tituloExPortugues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Exercícios de Português"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideLinerExH1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPerguntaExPort"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeMaxTextSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideLinerExH1"
+            app:layout_constraintBottom_toTopOf="@+id/guideLinerExH2"/>
+
+        <TextView
+            android:id="@+id/textRespostaExPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideLinerExH2"
+            app:layout_constraintBottom_toTopOf="@id/guideLinerExH3"/>
+
+
+        <Button
+            android:id="@+id/btnVerRespostasP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/retangulo_arred_ver_respostas"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:text="Resposta"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineExV2"
+            app:layout_constraintStart_toStartOf="@+id/guideLineExV1"
+            app:layout_constraintTop_toBottomOf="@+id/guideLinerExH3"
+            app:layout_constraintBottom_toBottomOf="@+id/guideLinerExH4" />
+
+        <Button
+            android:id="@+id/btnRespostaAnteriorP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/retangulo_arred_ver_respostas"
+            android:text="Anterior"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineExV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideLinerExH3"
+            app:layout_constraintBottom_toBottomOf="@+id/guideLinerExH4" />
+
+        <Button
+            android:id="@+id/btnRespostaSeguinteP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/retangulo_arred_ver_respostas"
+            android:text="Próxima"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideLineExV2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLinerExH3"
+            app:layout_constraintBottom_toBottomOf="@+id/guideLinerExH4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

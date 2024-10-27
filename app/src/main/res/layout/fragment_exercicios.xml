@@ -1,18 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
     tools:context=".view.ExerciciosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragmento Exercícios"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:background="#F60000"
-        android:gravity="center"/>
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineVer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineVer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2416666666666667" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.3833333333333334"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5250000000000001" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6666666666666668" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineMenuOculto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineExerV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8083333333333335" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/fundo_exercicios_title">
+
+
+            <ImageView
+                android:id="@+id/bandeira"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bandeira"
+                android:layout_gravity="left|center"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/textExercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="sans-serif-black"
+                android:text="Exercícios"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgPortuguesExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/portuguesexercicios"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV2"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV1" />
+
+        <ImageView
+            android:id="@+id/imagMatematicaExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/matematicaexercicios"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV3"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV2" />
+
+        <ImageView
+            android:id="@+id/imgInglesExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/inglesexercicios"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV4"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV3" />
+
+        <ImageView
+            android:id="@+id/imgBiologiaExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/biologiaexercicios"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV5"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV4" />
+
+        <ImageView
+            android:id="@+id/imgQuimicaExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/quimicaexercicios"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineExerV6"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV5" />
+
+        <ImageView
+            android:id="@+id/imgInformaticaExer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/informaticaexercicios"
+            app:layout_constraintBottom_toBottomOf="@+id/guideLineMenuOculto"
+            app:layout_constraintLeft_toRightOf="@+id/guideLineVer1"
+            app:layout_constraintRight_toLeftOf="@+id/guideLineVer2"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineExerV6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
